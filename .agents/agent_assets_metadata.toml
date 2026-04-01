@@ -1,0 +1,38 @@
+uploads = []
+outputs = []
+
+[[generated]]
+id = "B00BCyTXyrwIGd8RbMn2e"
+uri = "file://artifacts/skincare-site/public/hero.png"
+type = "image"
+title = "Glowing skin splash hero"
+
+[[generated]]
+id = "YaPUdRGWWkSJTsqIocb7k"
+uri = "file://artifacts/skincare-site/public/routine.png"
+type = "image"
+title = "Skincare flatlay routine"
+
+[[generated]]
+id = "A8kcinNqCVEgyyhnV89mc"
+uri = "file://artifacts/skincare-site/public/ingredient.png"
+type = "image"
+title = "Serum macro drop"
+
+[[generated]]
+id = "mwGbgSkMCeafxJgbbsH3S"
+uri = "file://artifacts/skincare-site/public/community.png"
+type = "image"
+title = "Diverse laughing friends"
+
+[[generated]]
+id = "Z50-HDR_PFl4TWffIfn2Z"
+uri = "file://artifacts/skincare-site/public/product1.png"
+type = "image"
+title = "Bubbly pink face wash"
+
+[[generated]]
+id = "KXfSUEzNboSItzpVx6iBy"
+uri = "file://artifacts/skincare-site/public/product2.png"
+type = "image"
+title = "Bright yellow moisturizer"
