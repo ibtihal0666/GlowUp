@@ -1,31 +1,42 @@
 import { Switch, Route, Router as WouterRouter } from "wouter";
-import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
-import { Toaster } from "@/components/ui/toaster";
-import { TooltipProvider } from "@/components/ui/tooltip";
-import NotFound from "@/pages/not-found";
-import Home from "@/pages/home";
+import { ThemeProvider } from "@/components/ThemeProvider";
+import { Navbar } from "@/components/Navbar";
 
-const queryClient = new QueryClient();
+// Pages
+import Dashboard from "@/pages/Dashboard";
+import Products from "@/pages/Products";
+import CreateProduct from "@/pages/CreateProduct";
+import PlanRoutine from "@/pages/PlanRoutine";
 
 function Router() {
   return (
     <Switch>
-      <Route path="/" component={Home} />
-      <Route component={NotFound} />
+      <Route path="/" component={Dashboard} />
+      <Route path="/products" component={Products} />
+      <Route path="/create" component={CreateProduct} />
+      <Route path="/plan" component={PlanRoutine} />
+      <Route>
+        <div className="flex flex-col items-center justify-center min-h-[50vh] text-center p-8">
+          <h1 className="text-4xl mb-4">404</h1>
+          <p className="font-sans text-2xl">Quest Not Found</p>
+        </div>
+      </Route>
     </Switch>
   );
 }
 
 function App() {
   return (
-    <QueryClientProvider client={queryClient}>
-      <TooltipProvider>
+    <ThemeProvider>
+      <div className="min-h-screen pb-12 flex flex-col font-sans">
         <WouterRouter base={import.meta.env.BASE_URL.replace(/\/$/, "")}>
-          <Router />
+          <Navbar />
+          <main className="flex-1 flex flex-col">
+            <Router />
+          </main>
         </WouterRouter>
-        <Toaster />
-      </TooltipProvider>
-    </QueryClientProvider>
+      </div>
+    </ThemeProvider>
   );
 }
 

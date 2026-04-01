@@ -36,3 +36,9 @@ id = "KXfSUEzNboSItzpVx6iBy"
 uri = "file://artifacts/skincare-site/public/product2.png"
 type = "image"
 title = "Bright yellow moisturizer"
+
+[[generated]]
+id = "tuArA9cIqaYNlHaZTYxQA"
+uri = "file://artifacts/skincare-site/public/empty-state.png"
+type = "image"
+title = "Pixel art skincare bottle"
