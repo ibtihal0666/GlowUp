@@ -69,43 +69,42 @@
   --radius: 0px;
 }
 
-/* ─── Animal walk animations ─────────────────────────────────────────── */
-@keyframes walk-right {
-  from { transform: translateX(-100px); }
-  to   { transform: translateX(calc(100vw + 100px)); }
+/* ─── Flower floating animations ─────────────────────────────────────── */
+@keyframes petal-rise-a {
+  0%   { transform: translateY(0px)   rotate(-3deg); opacity: 0; }
+  8%   { opacity: 1; }
+  42%  { transform: translateY(-42vh) rotate(5deg);  }
+  92%  { opacity: 1; }
+  100% { transform: translateY(-108vh) rotate(-2deg); opacity: 0; }
 }
 
-@keyframes walk-left {
-  from { transform: translateX(calc(100vw + 100px)); }
-  to   { transform: translateX(-100px); }
+@keyframes petal-rise-b {
+  0%   { transform: translateY(0px)   rotate(4deg);  opacity: 0; }
+  8%   { opacity: 1; }
+  50%  { transform: translateY(-50vh) rotate(-6deg); }
+  92%  { opacity: 1; }
+  100% { transform: translateY(-110vh) rotate(3deg);  opacity: 0; }
 }
 
-@keyframes gentle-bob {
-  0%, 100% { transform: translateY(0px);  }
-  50%       { transform: translateY(-10px); }
+@keyframes petal-rise-c {
+  0%   { transform: translateY(0px)   rotate(-6deg); opacity: 0; }
+  8%   { opacity: 1; }
+  35%  { transform: translateY(-35vh) rotate(8deg);  }
+  70%  { transform: translateY(-70vh) rotate(-4deg); }
+  92%  { opacity: 1; }
+  100% { transform: translateY(-112vh) rotate(2deg);  opacity: 0; }
 }
 
-@keyframes gentle-bounce {
-  0%, 100% { transform: translateY(0px) scaleY(1);    }
-  40%       { transform: translateY(-14px) scaleY(1.05); }
-  60%       { transform: translateY(0px) scaleY(0.95); }
+/* Gentle stem sway — applied to the inner flower, origin at bottom */
+@keyframes flower-sway {
+  0%, 100% { transform: rotate(-6deg); }
+  50%       { transform: rotate(6deg);  }
 }
 
-@keyframes gentle-sway {
-  0%, 100% { transform: rotate(-4deg); }
-  50%       { transform: rotate(4deg);  }
-}
-
-@keyframes tail-wag {
-  0%, 100% { transform: rotate(-10deg); }
-  50%       { transform: rotate(15deg); }
-}
-
-.walk-right  { animation: walk-right linear infinite; }
-.walk-left   { animation: walk-left  linear infinite; }
-.bob-inner   { animation: gentle-bob 2s ease-in-out infinite; }
-.bounce-inner{ animation: gentle-bounce 1.4s ease-in-out infinite; }
-.sway-inner  { animation: gentle-sway 2.5s ease-in-out infinite; }
+.rise-a    { animation: petal-rise-a linear infinite; }
+.rise-b    { animation: petal-rise-b linear infinite; }
+.rise-c    { animation: petal-rise-c linear infinite; }
+.sway-flower { animation: flower-sway ease-in-out infinite; transform-origin: bottom center; }
 
 /* ─── Base styles ────────────────────────────────────────────────────── */
 @layer base {
