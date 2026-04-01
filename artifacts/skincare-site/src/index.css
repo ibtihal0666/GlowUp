@@ -37,63 +37,89 @@
 
 :root {
   /* Default Pink Theme */
-  --background: 350 100% 88%; /* Soft pastel pink */
+  --background: 350 100% 90%;
   --foreground: 330 60% 20%;
-  
+
   --border: 330 50% 70%;
-  --input: 350 100% 95%;
+  --input: 350 100% 96%;
   --ring: 330 80% 60%;
-  
-  --card: 350 100% 95%;
+
+  --card: 350 100% 96%;
   --card-foreground: 330 60% 20%;
   --card-border: 330 60% 40%;
-  
+
   --primary: 330 80% 60%;
   --primary-foreground: 0 0% 100%;
-  
-  --secondary: 340 70% 80%;
+
+  --secondary: 340 70% 82%;
   --secondary-foreground: 330 60% 20%;
-  
-  --muted: 350 60% 85%;
-  --muted-foreground: 330 40% 40%;
-  
+
+  --muted: 350 60% 87%;
+  --muted-foreground: 330 40% 42%;
+
   --accent: 330 80% 60%;
   --accent-foreground: 0 0% 100%;
-  
+
   --destructive: 0 84% 60%;
   --destructive-foreground: 0 0% 100%;
 
   --app-font-sans: 'VT323', monospace;
   --app-font-display: 'Press Start 2P', cursive;
-  
-  --radius: 0px; /* Pixel art has no rounded corners */
+
+  --radius: 0px;
 }
 
 .theme-purple {
-  /* Purple Theme */
-  --background: 285 45% 85%; /* Soft lavender */
+  --background: 285 45% 87%;
   --foreground: 280 60% 20%;
-  
+
   --border: 280 40% 65%;
-  --input: 285 50% 95%;
+  --input: 285 50% 96%;
   --ring: 280 70% 60%;
-  
-  --card: 285 50% 95%;
+
+  --card: 285 50% 96%;
   --card-foreground: 280 60% 20%;
   --card-border: 280 60% 40%;
-  
+
   --primary: 280 70% 60%;
   --primary-foreground: 0 0% 100%;
-  
-  --secondary: 285 50% 75%;
+
+  --secondary: 285 50% 77%;
   --secondary-foreground: 280 60% 20%;
-  
-  --muted: 285 40% 80%;
-  --muted-foreground: 280 40% 40%;
-  
+
+  --muted: 285 40% 82%;
+  --muted-foreground: 280 40% 42%;
+
   --accent: 280 70% 60%;
   --accent-foreground: 0 0% 100%;
 }
+
+/* Floating animation keyframes — elements float from below viewport to above */
+@keyframes float-a {
+  0%   { transform: translateY(60px)    translateX(0px);   opacity: 0; }
+  8%   { opacity: 1; }
+  92%  { opacity: 1; }
+  100% { transform: translateY(-112vh)  translateX(18px);  opacity: 0; }
+}
+
+@keyframes float-b {
+  0%   { transform: translateY(60px)    translateX(0px);   opacity: 0; }
+  8%   { opacity: 1; }
+  92%  { opacity: 1; }
+  100% { transform: translateY(-112vh)  translateX(-22px); opacity: 0; }
+}
+
+@keyframes float-c {
+  0%   { transform: translateY(60px)    translateX(0px);   opacity: 0; }
+  8%   { opacity: 1; }
+  50%  { transform: translateY(-56vh)   translateX(12px); }
+  92%  { opacity: 1; }
+  100% { transform: translateY(-112vh)  translateX(-8px);  opacity: 0; }
+}
+
+.float-a { animation: float-a linear infinite; }
+.float-b { animation: float-b linear infinite; }
+.float-c { animation: float-c linear infinite; }
 
 @layer base {
   * {
@@ -102,13 +128,9 @@
 
   body {
     @apply font-sans antialiased bg-background text-foreground;
-    font-size: 1.25rem;
-    background-image: 
-      linear-gradient(to right, rgba(0,0,0,0.05) 1px, transparent 1px),
-      linear-gradient(to bottom, rgba(0,0,0,0.05) 1px, transparent 1px);
-    background-size: 20px 20px;
+    font-size: 1.1rem;
   }
-  
+
   h1, h2, h3, h4, h5, h6 {
     @apply font-display tracking-tight leading-loose;
   }
@@ -116,22 +138,23 @@
 
 /* Pixel art utilities */
 .pixel-border {
-  border: 4px solid hsl(var(--card-border));
-  box-shadow: 4px 4px 0px 0px rgba(0,0,0,0.15);
+  border: 3px solid hsl(var(--card-border));
+  box-shadow: 3px 3px 0px 0px rgba(0,0,0,0.13);
 }
 
 .pixel-border-sm {
   border: 2px solid hsl(var(--card-border));
-  box-shadow: 2px 2px 0px 0px rgba(0,0,0,0.15);
+  box-shadow: 2px 2px 0px 0px rgba(0,0,0,0.12);
 }
 
 .pixel-btn {
   @apply font-display uppercase tracking-wider relative transition-transform active:translate-y-1 active:translate-x-1;
-  border: 4px solid hsl(var(--card-border));
-  box-shadow: 4px 4px 0px 0px rgba(0,0,0,0.2);
+  font-size: 0.6rem;
+  border: 3px solid hsl(var(--card-border));
+  box-shadow: 3px 3px 0px 0px rgba(0,0,0,0.18);
 }
 .pixel-btn:active {
-  box-shadow: 0px 0px 0px 0px rgba(0,0,0,0.2);
+  box-shadow: 0px 0px 0px 0px rgba(0,0,0,0.18);
 }
 .pixel-btn-primary {
   @apply bg-primary text-primary-foreground;
@@ -147,8 +170,8 @@
 }
 
 .pixel-input {
-  @apply font-sans text-xl bg-input text-foreground outline-none focus:ring-4 focus:ring-ring/50 transition-none;
-  border: 4px solid hsl(var(--card-border));
+  @apply font-sans text-lg bg-input text-foreground outline-none focus:ring-4 focus:ring-ring/50 transition-none;
+  border: 3px solid hsl(var(--card-border));
 }
 
 /* Custom Checkbox */
@@ -158,9 +181,9 @@
   margin: 0;
   font: inherit;
   color: currentColor;
-  width: 1.5em;
-  height: 1.5em;
-  border: 4px solid hsl(var(--card-border));
+  width: 1.4em;
+  height: 1.4em;
+  border: 3px solid hsl(var(--card-border));
   display: grid;
   place-content: center;
   cursor: pointer;
@@ -168,15 +191,25 @@
 
 .pixel-checkbox::before {
   content: "";
-  width: 0.65em;
-  height: 0.65em;
+  width: 0.6em;
+  height: 0.6em;
   transform: scale(0);
   transition: 120ms transform ease-in-out;
-  box-shadow: inset 1em 1em hsl(var(--primary));
-  /* A simple square check */
   background-color: hsl(var(--primary));
 }
 
 .pixel-checkbox:checked::before {
   transform: scale(1);
+}
+
+/* Pixel art image rendering */
+.pixelated {
+  image-rendering: pixelated;
+  image-rendering: crisp-edges;
+}
+
+/* Display font sizing */
+.font-display {
+  font-size: inherit;
+  line-height: 1.6;
 }
