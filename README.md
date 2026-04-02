@@ -1,24 +1,9 @@
-🌸 Glowbit – Skincare Gamified Website
+🌸 Glowbit
 
-Glowbit is a soft, pink-themed skincare web app that turns your daily routine into a fun and motivating experience.
+Glowbit is a pink-themed skincare web app that turns your daily routine into a fun, game-like experience.
+Track your products, build routines, and complete daily quests to stay consistent and motivated.
 
-Inspired by game design, the platform allows users to manage their skincare products, build personalized routines, and track daily progress through an engaging “quest” system.
-
-✨ Features
-🧴 Product Collection: Add and manage your skincare products
-🎮 Daily Quest System: Complete skincare tasks and earn progress
-🛠️ Routine Planner: Build and customize your daily skincare routine
-🎨 Aesthetic Design: Soft pixel-style UI with a cozy baby pink theme
-🌼 Interactive Experience: Select products visually and organize your routine easily
-💡 Concept
-
-Glowbit transforms skincare from a simple habit into a rewarding journey.
-Each action feels like completing a quest — making self-care more consistent, fun, and motivating.
-
-🚧 Status
-
-Work in progress 💻✨
-More features and improvements coming soon!
+🚧 Work in progress 💻✨
 <img width="960" height="540" alt="0" src="https://github.com/user-attachments/assets/fa6c11df-cb79-4d56-81aa-43147453d2f0" />
 <img w<img width="960" height="540" alt="2" src="https://github.com/user-attachments/assets/c86eca85-a70d-4bd8-a5cb-940d1f8dd51e" />
 idth="960" height="540" alt="1" src="https://github.com/user-attachments/assets/a24a5a74-d8f9-41f3-a73b-9ced4342804e" />
