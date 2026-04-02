@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { Link } from "wouter";
 import { useProducts } from "../hooks/useProducts";
-import { PixelArtCanvas } from "../components/PixelArtCanvas";
+import { ProductDisplay } from "../components/ProductDisplay";
 
 export default function Products() {
   const { products, deleteProduct } = useProducts();
@@ -36,7 +36,7 @@ export default function Products() {
               onClick={() => setSelectedProduct(selectedProduct === p.id ? null : p.id)}
             >
               <div className="flex justify-center mb-4 bg-background pixel-border-sm p-4 aspect-square">
-                <PixelArtCanvas grid={p.pixelArt} scale={5} className="w-full h-full object-contain" />
+                <ProductDisplay product={p} size={96} scale={5} />
               </div>
               <h3 className="font-display text-sm text-center mb-2 line-clamp-2">{p.name}</h3>
               <p className="font-sans text-lg text-center text-muted-foreground mb-2">{p.brand}</p>

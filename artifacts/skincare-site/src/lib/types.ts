@@ -6,6 +6,7 @@ export interface Product {
   brand: string;
   category: Category;
   pixelArt: string[][]; // 16x16 grid of hex colors
+  spriteId?: string;    // if set, use the pre-made SVG sprite instead
 }
 
 export interface RoutineItem {

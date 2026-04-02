@@ -3,7 +3,7 @@ import { Link } from "wouter";
 import { format } from "date-fns";
 import { useProducts } from "../hooks/useProducts";
 import { useDailyRoutine } from "../hooks/useDailyRoutine";
-import { PixelArtCanvas } from "../components/PixelArtCanvas";
+import { ProductDisplay } from "../components/ProductDisplay";
 
 export default function Dashboard() {
   const today = format(new Date(), "yyyy-MM-dd");
@@ -56,7 +56,7 @@ export default function Dashboard() {
                     readOnly
                   />
                   <div className="shrink-0">
-                    <PixelArtCanvas grid={p.pixelArt} scale={3} />
+                    <ProductDisplay product={p} size={48} scale={3} />
                   </div>
                   <div className="flex-1 min-w-0">
                     <h3 className={`font-display text-sm md:text-base truncate ${item.completed ? 'line-through text-muted-foreground' : ''}`}>

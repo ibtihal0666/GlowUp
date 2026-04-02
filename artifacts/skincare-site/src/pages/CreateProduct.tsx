@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { useLocation } from "wouter";
 import { useProducts } from "../hooks/useProducts";
-import { PixelArtCanvas } from "../components/PixelArtCanvas";
+import { ProductDisplay } from "../components/ProductDisplay";
 import { Category } from "../lib/types";
 import { PRODUCT_TEMPLATES, ProductTemplate } from "../lib/productTemplates";
 
@@ -30,6 +30,7 @@ export default function CreateProduct() {
       brand,
       category,
       pixelArt: selected.pixelArt,
+      spriteId: selected.spriteId,
     });
     setLocation("/products");
   };
@@ -47,6 +48,7 @@ export default function CreateProduct() {
         <div className="grid grid-cols-3 sm:grid-cols-4 md:grid-cols-7 gap-3">
           {PRODUCT_TEMPLATES.map((t) => {
             const isActive = selected?.id === t.id;
+            const mockProduct = { ...t, id: t.id };
             return (
               <button
                 key={t.id}
@@ -58,8 +60,8 @@ export default function CreateProduct() {
                 }`}
                 title={`${t.name} by ${t.brand}`}
               >
-                <PixelArtCanvas grid={t.pixelArt} scale={6} />
-                <p className="font-display text-[0.4rem] text-center leading-loose text-muted-foreground line-clamp-2">
+                <ProductDisplay product={mockProduct} size={72} scale={4} />
+                <p className="font-display text-[0.38rem] text-center leading-loose text-muted-foreground line-clamp-2">
                   {t.brand}
                 </p>
               </button>
@@ -74,8 +76,8 @@ export default function CreateProduct() {
           {/* Left: sprite preview */}
           <div className="bg-card pixel-border p-5 flex flex-col items-center gap-4">
             <h2>Selected Product</h2>
-            <div className="bg-white pixel-border p-3 inline-block">
-              <PixelArtCanvas grid={selected.pixelArt} scale={12} />
+            <div className="bg-white pixel-border p-4 inline-block">
+              <ProductDisplay product={selected} size={160} scale={10} />
             </div>
             <p className="font-display text-[0.5rem] text-center text-muted-foreground leading-loose">
               {selected.category}

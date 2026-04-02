@@ -6,6 +6,7 @@ export interface ProductTemplate {
   brand: string;
   category: Category;
   pixelArt: string[][];
+  spriteId: string;
 }
 
 const E = ""; // transparent
@@ -201,6 +202,7 @@ const puredermMask: string[][] = (() => {
 export const PRODUCT_TEMPLATES: ProductTemplate[] = [
   {
     id: "cetaphil-cleanser",
+    spriteId: "cetaphil-cleanser",
     name: "Daily Facial Cleanser",
     brand: "Cetaphil",
     category: "Cleanser",
@@ -208,6 +210,7 @@ export const PRODUCT_TEMPLATES: ProductTemplate[] = [
   },
   {
     id: "axisy-toner",
+    spriteId: "axisy-toner",
     name: "Daily Purifying Treatment Toner",
     brand: "AXIS-Y",
     category: "Toner",
@@ -215,6 +218,7 @@ export const PRODUCT_TEMPLATES: ProductTemplate[] = [
   },
   {
     id: "herbivore-bakuchiol",
+    spriteId: "herbivore-bakuchiol",
     name: "Bakuchiol Retinol Alternative Serum",
     brand: "Herbivore",
     category: "Serum",
@@ -222,6 +226,7 @@ export const PRODUCT_TEMPLATES: ProductTemplate[] = [
   },
   {
     id: "cerave-moisturizer",
+    spriteId: "cerave-moisturizer",
     name: "Moisturizing Cream",
     brand: "CeraVe",
     category: "Moisturizer",
@@ -229,6 +234,7 @@ export const PRODUCT_TEMPLATES: ProductTemplate[] = [
   },
   {
     id: "cetaphil-spf",
+    spriteId: "cetaphil-spf",
     name: "Sun Ultra-Light Lotion SPF 50",
     brand: "Cetaphil",
     category: "SPF",
@@ -236,6 +242,7 @@ export const PRODUCT_TEMPLATES: ProductTemplate[] = [
   },
   {
     id: "axisy-eye-serum",
+    spriteId: "axisy-eye-serum",
     name: "Vegan Collagen Eye Serum",
     brand: "AXIS-Y",
     category: "Eye Cream",
@@ -243,6 +250,7 @@ export const PRODUCT_TEMPLATES: ProductTemplate[] = [
   },
   {
     id: "purederm-mask",
+    spriteId: "purederm-mask",
     name: "Deep Purifying Pink O2 Bubble Mask",
     brand: "Purederm",
     category: "Mask",

@@ -3,7 +3,7 @@ import { useLocation } from "wouter";
 import { format } from "date-fns";
 import { useProducts } from "../hooks/useProducts";
 import { useDailyRoutine } from "../hooks/useDailyRoutine";
-import { PixelArtCanvas } from "../components/PixelArtCanvas";
+import { ProductDisplay } from "../components/ProductDisplay";
 
 export default function PlanRoutine() {
   const [, setLocation] = useLocation();
@@ -91,7 +91,7 @@ export default function PlanRoutine() {
                   onClick={() => toggleSelection(p.id)}
                 >
                   <div className="bg-white pixel-border-sm p-1 shrink-0">
-                    <PixelArtCanvas grid={p.pixelArt} scale={2} />
+                    <ProductDisplay product={p} size={40} scale={2} />
                   </div>
                   <div className="flex-1 min-w-0">
                     <h4 className="font-display text-xs truncate">{p.name}</h4>
@@ -124,7 +124,7 @@ export default function PlanRoutine() {
                   <div key={id} className="flex items-center gap-3 p-3 bg-background pixel-border-sm">
                     <span className="font-display text-muted-foreground w-4 text-xs">{index + 1}.</span>
                     <div className="bg-white pixel-border-sm p-1 shrink-0">
-                      <PixelArtCanvas grid={p.pixelArt} scale={2} />
+                      <ProductDisplay product={p} size={40} scale={2} />
                     </div>
                     <div className="flex-1 min-w-0">
                       <h4 className="font-display text-xs truncate">{p.name}</h4>
