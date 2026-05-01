@@ -1,5 +1,4 @@
 uploads = []
-outputs = []
 
 [[generated]]
 id = "B00BCyTXyrwIGd8RbMn2e"
@@ -42,3 +41,9 @@ id = "tuArA9cIqaYNlHaZTYxQA"
 uri = "file://artifacts/skincare-site/public/empty-state.png"
 type = "image"
 title = "Pixel art skincare bottle"
+
+[[outputs]]
+id = "q103C6RFa1Q6lTLfwfx9b"
+uri = "file://glowbit-source.tar.gz"
+type = "unspecified"
+title = "GlowBit — Full Source Code"
