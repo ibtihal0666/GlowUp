@@ -69,6 +69,26 @@
   --radius: 0px;
 }
 
+/* ─── Global mobile safety ───────────────────────────────────────────── */
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+html, body {
+  overflow-x: hidden;
+  max-width: 100vw;
+}
+
+/* Safe-area insets for devices with notches / home bars */
+body {
+  padding-bottom: env(safe-area-inset-bottom, 0px);
+}
+
+/* Prevent very long words from causing overflow on small screens */
+.font-display, h1, h2, h3, h4 {
+  word-break: break-word;
+}
+
 /* ─── Flower floating animations ─────────────────────────────────────── */
 @keyframes petal-rise-a {
   0%   { transform: translateY(0px)   rotate(-3deg); opacity: 0; }

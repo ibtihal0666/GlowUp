@@ -10,7 +10,7 @@ export default function Products() {
   return (
     <div className="container mx-auto px-4 pb-16 max-w-4xl">
       <div className="flex flex-col sm:flex-row justify-between items-center mb-8 gap-4">
-        <h1 className="text-3xl text-foreground text-stroke-primary drop-shadow-md">My Inventory</h1>
+        <h1 className="text-xl md:text-3xl text-foreground text-stroke-primary drop-shadow-md">My Inventory</h1>
         <Link href="/create">
           <button className="pixel-btn pixel-btn-primary px-6 py-3">
             Craft New Item

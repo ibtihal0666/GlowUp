@@ -74,12 +74,12 @@ export default function PlanRoutine() {
 
   return (
     <div className="container mx-auto px-4 pb-16 max-w-5xl">
-      <h1 className="text-3xl text-center mb-8">Plan Today's Strategy</h1>
+      <h1 className="text-xl md:text-3xl text-center mb-6 md:mb-8">Plan Today's Strategy</h1>
       
-      <div className="grid md:grid-cols-2 gap-8">
+      <div className="grid md:grid-cols-2 gap-6">
         {/* Left: Inventory */}
-        <div className="bg-card pixel-border p-6 flex flex-col h-[70vh]">
-          <h2 className="font-display text-xl mb-4 pb-4 border-b-4 border-dashed border-border shrink-0">Inventory</h2>
+        <div className="bg-card pixel-border p-4 md:p-6 flex flex-col h-[45vh] md:h-[70vh]">
+          <h2 className="font-display text-base md:text-xl mb-3 md:mb-4 pb-3 md:pb-4 border-b-4 border-dashed border-border shrink-0">Inventory</h2>
           <div className="overflow-y-auto flex-1 pr-2 space-y-3 custom-scrollbar">
             {products.map(p => {
               const isSelected = selectedProductIds.includes(p.id);
@@ -107,8 +107,8 @@ export default function PlanRoutine() {
         </div>
 
         {/* Right: Selected Routine */}
-        <div className="bg-card pixel-border p-6 flex flex-col h-[70vh]">
-          <h2 className="font-display text-xl mb-4 pb-4 border-b-4 border-dashed border-border shrink-0">Selected Gear</h2>
+        <div className="bg-card pixel-border p-4 md:p-6 flex flex-col h-[45vh] md:h-[70vh]">
+          <h2 className="font-display text-base md:text-xl mb-3 md:mb-4 pb-3 md:pb-4 border-b-4 border-dashed border-border shrink-0">Selected Gear</h2>
           
           <div className="overflow-y-auto flex-1 pr-2 space-y-3 custom-scrollbar">
             {selectedProductIds.length === 0 ? (

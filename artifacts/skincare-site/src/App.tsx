@@ -31,10 +31,10 @@ function App() {
       <div className="min-h-screen flex flex-col relative">
         <PixelBackground />
         <WouterRouter base={import.meta.env.BASE_URL.replace(/\/$/, "")}>
-          <main className="flex-1 pb-12 pt-8 pr-[200px] relative z-10">
+          <main className="flex-1 pb-6 pt-6 px-2 md:px-0 md:pt-8 md:pb-12 md:pr-[200px] relative z-10">
             <Router />
           </main>
-          <footer className="pr-[200px] relative z-10 border-t-4 border-primary bg-card/80 backdrop-blur-sm py-4 px-6 flex flex-col sm:flex-row items-center justify-center gap-2 sm:gap-6 flex-wrap">
+          <footer className="md:pr-[200px] relative z-10 border-t-4 border-primary bg-card/80 backdrop-blur-sm py-3 px-4 flex flex-col sm:flex-row items-center justify-center gap-1 sm:gap-6 flex-wrap mb-16 md:mb-0">
             <span className="font-sans text-xs text-muted-foreground text-center">
               © IBTIHAL NOUI — All rights reserved
             </span>

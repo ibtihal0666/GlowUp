@@ -39,15 +39,15 @@ export default function CreateProduct() {
 
   return (
     <div className="container mx-auto px-4 pb-16 max-w-5xl">
-      <h1 className="text-center mb-2">Crafting Station</h1>
-      <p className="font-sans text-center text-muted-foreground mb-6 text-base">
+      <h1 className="text-center mb-2 text-xl md:text-3xl">Crafting Station</h1>
+      <p className="font-sans text-center text-muted-foreground mb-4 md:mb-6 text-sm md:text-base">
         Choose a product from your collection to add to your inventory.
       </p>
 
       {/* ── Product gallery ── */}
       <div className="bg-card pixel-border p-5 mb-6">
         <h2 className="mb-4">Choose Your Product</h2>
-        <div className="grid grid-cols-3 sm:grid-cols-4 md:grid-cols-5 gap-3">
+        <div className="grid grid-cols-2 xs:grid-cols-3 sm:grid-cols-4 md:grid-cols-5 gap-2 sm:gap-3">
           {PRODUCT_TEMPLATES.map((t) => {
             const isActive = selected?.id === t.id;
             const mockProduct = { ...t, id: t.id };
