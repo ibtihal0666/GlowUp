@@ -31,6 +31,8 @@ export default function CreateProduct() {
       category,
       pixelArt: selected.pixelArt,
       spriteId: selected.spriteId,
+      description: selected.description,
+      price: selected.price,
     });
     setLocation("/products");
   };
@@ -45,7 +47,7 @@ export default function CreateProduct() {
       {/* ── Product gallery ── */}
       <div className="bg-card pixel-border p-5 mb-6">
         <h2 className="mb-4">Choose Your Product</h2>
-        <div className="grid grid-cols-3 sm:grid-cols-4 md:grid-cols-7 gap-3">
+        <div className="grid grid-cols-3 sm:grid-cols-4 md:grid-cols-5 gap-3">
           {PRODUCT_TEMPLATES.map((t) => {
             const isActive = selected?.id === t.id;
             const mockProduct = { ...t, id: t.id };
@@ -53,16 +55,19 @@ export default function CreateProduct() {
               <button
                 key={t.id}
                 onClick={() => pick(t)}
-                className={`flex flex-col items-center gap-2 p-2 transition-all cursor-pointer ${
+                className={`flex flex-col items-center gap-1 p-2 transition-all cursor-pointer text-left ${
                   isActive
                     ? "bg-primary/20 pixel-border"
                     : "hover:bg-primary/10 pixel-border-sm"
                 }`}
-                title={`${t.name} by ${t.brand}`}
+                title={t.name}
               >
-                <ProductDisplay product={mockProduct} size={72} scale={4} />
-                <p className="font-display text-[0.38rem] text-center leading-loose text-muted-foreground line-clamp-2">
-                  {t.brand}
+                <ProductDisplay product={mockProduct} size={64} scale={4} />
+                <p className="font-display text-[0.36rem] text-center leading-loose text-foreground line-clamp-2 w-full">
+                  {t.name}
+                </p>
+                <p className="font-sans text-[0.65rem] font-bold text-primary">
+                  {t.price}
                 </p>
               </button>
             );
@@ -73,15 +78,27 @@ export default function CreateProduct() {
       {/* ── Details panel (shown after selection) ── */}
       {selected ? (
         <div className="grid md:grid-cols-2 gap-6 items-start">
-          {/* Left: sprite preview */}
+          {/* Left: sprite preview + description */}
           <div className="bg-card pixel-border p-5 flex flex-col items-center gap-4">
             <h2>Selected Product</h2>
             <div className="bg-white pixel-border p-4 inline-block">
               <ProductDisplay product={selected} size={160} scale={10} />
             </div>
-            <p className="font-display text-[0.5rem] text-center text-muted-foreground leading-loose">
-              {selected.category}
-            </p>
+            <div className="w-full space-y-2 text-center">
+              <p className="font-display text-[0.5rem] text-muted-foreground leading-loose">
+                {selected.category}
+              </p>
+              {selected.price && (
+                <p className="font-sans font-bold text-primary text-lg">
+                  {selected.price}
+                </p>
+              )}
+              {selected.description && (
+                <p className="font-sans text-sm text-muted-foreground leading-relaxed px-2">
+                  {selected.description}
+                </p>
+              )}
+            </div>
           </div>
 
           {/* Right: form */}
@@ -106,6 +123,7 @@ export default function CreateProduct() {
                   value={brand}
                   onChange={e => setBrand(e.target.value)}
                   className="w-full pixel-input p-3"
+                  placeholder="Optional"
                 />
               </div>
 

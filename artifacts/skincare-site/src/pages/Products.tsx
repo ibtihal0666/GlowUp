@@ -38,9 +38,19 @@ export default function Products() {
               <div className="flex justify-center mb-4 bg-background pixel-border-sm p-4 aspect-square">
                 <ProductDisplay product={p} size={96} scale={5} />
               </div>
-              <h3 className="font-display text-sm text-center mb-2 line-clamp-2">{p.name}</h3>
-              <p className="font-sans text-lg text-center text-muted-foreground mb-2">{p.brand}</p>
-              
+              <h3 className="font-display text-sm text-center mb-1 line-clamp-2">{p.name}</h3>
+              {p.brand && (
+                <p className="font-sans text-sm text-center text-muted-foreground mb-1">{p.brand}</p>
+              )}
+              {p.price && (
+                <p className="font-sans text-center font-bold text-primary text-base mb-1">{p.price}</p>
+              )}
+              {p.description && (
+                <p className="font-sans text-center text-muted-foreground text-xs leading-snug mb-2 line-clamp-2 px-1">
+                  {p.description}
+                </p>
+              )}
+
               <div className="mt-auto flex justify-center">
                 <span className="bg-primary/20 text-foreground px-2 py-1 text-xs font-display pixel-border-sm inline-block">
                   {p.category}

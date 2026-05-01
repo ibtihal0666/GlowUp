@@ -7,6 +7,8 @@ export interface ProductTemplate {
   category: Category;
   pixelArt: string[][];
   spriteId: string;
+  description: string;
+  price: string;
 }
 
 const E = ""; // transparent
@@ -199,13 +201,18 @@ const puredermMask: string[][] = (() => {
 })();
 
 /* ─── Exported template catalogue ───────────────────────────────────────*/
+const EMPTY_GRID: string[][] = Array(16).fill(null).map(() => Array(16).fill(""));
+
 export const PRODUCT_TEMPLATES: ProductTemplate[] = [
+  /* ── Existing products ── */
   {
     id: "cetaphil-cleanser",
     spriteId: "cetaphil-cleanser",
     name: "Daily Facial Cleanser",
     brand: "Cetaphil",
     category: "Cleanser",
+    description: "Gentle, fragrance-free cleanser for sensitive combination skin.",
+    price: "$18.99",
     pixelArt: cetaphilCleanser,
   },
   {
@@ -214,6 +221,8 @@ export const PRODUCT_TEMPLATES: ProductTemplate[] = [
     name: "Daily Purifying Treatment Toner",
     brand: "AXIS-Y",
     category: "Toner",
+    description: "BHA toner with centella extract to gently exfoliate and clarify.",
+    price: "$24.99",
     pixelArt: axisYToner,
   },
   {
@@ -222,6 +231,8 @@ export const PRODUCT_TEMPLATES: ProductTemplate[] = [
     name: "Bakuchiol Retinol Alternative Serum",
     brand: "Herbivore",
     category: "Serum",
+    description: "Plant-based retinol alternative to smooth and firm without irritation.",
+    price: "$48.00",
     pixelArt: herbivoreBakuchiol,
   },
   {
@@ -230,6 +241,8 @@ export const PRODUCT_TEMPLATES: ProductTemplate[] = [
     name: "Moisturizing Cream",
     brand: "CeraVe",
     category: "Moisturizer",
+    description: "Rich cream with 3 essential ceramides to restore the skin barrier.",
+    price: "$14.99",
     pixelArt: ceraVeMoisturizer,
   },
   {
@@ -238,6 +251,8 @@ export const PRODUCT_TEMPLATES: ProductTemplate[] = [
     name: "Sun Ultra-Light Lotion SPF 50",
     brand: "Cetaphil",
     category: "SPF",
+    description: "Oil-free, non-greasy SPF50 sunscreen suitable under makeup.",
+    price: "$19.99",
     pixelArt: cetaphilSPF,
   },
   {
@@ -246,14 +261,100 @@ export const PRODUCT_TEMPLATES: ProductTemplate[] = [
     name: "Vegan Collagen Eye Serum",
     brand: "AXIS-Y",
     category: "Eye Cream",
+    description: "Collagen roller serum to firm, brighten and de-puff the eye area.",
+    price: "$28.00",
     pixelArt: axisYEyeSerum,
   },
   {
     id: "purederm-mask",
     spriteId: "purederm-mask",
-    name: "Deep Purifying Pink O2 Bubble Mask",
+    name: "Deep Purifying Bubble Mask",
     brand: "Purederm",
     category: "Mask",
+    description: "Oxygen-bubble sheet mask for deep pore cleansing and radiance.",
+    price: "$3.99",
     pixelArt: puredermMask,
+  },
+
+  /* ── Generic products ── */
+  {
+    id: "hydrating-lotion",
+    spriteId: "hydrating-lotion",
+    name: "Hydrating Face Lotion",
+    brand: "",
+    category: "Moisturizer",
+    description: "Lightweight daily moisturiser that sinks in fast for all skin types.",
+    price: "$12.99",
+    pixelArt: EMPTY_GRID,
+  },
+  {
+    id: "skin-balm",
+    spriteId: "skin-balm",
+    name: "Protective Skin Balm",
+    brand: "",
+    category: "Other",
+    description: "Thick petroleum-based balm that seals in moisture and heals dry patches.",
+    price: "$4.99",
+    pixelArt: EMPTY_GRID,
+  },
+  {
+    id: "acne-patches",
+    spriteId: "acne-patches",
+    name: "Acne Spot Patches",
+    brand: "",
+    category: "Mask",
+    description: "Hydrocolloid stickers that absorb fluid and flatten pimples overnight.",
+    price: "$7.99",
+    pixelArt: EMPTY_GRID,
+  },
+  {
+    id: "vitamin-c-serum",
+    spriteId: "vitamin-c-serum",
+    name: "Vitamin C Brightening Serum",
+    brand: "",
+    category: "Serum",
+    description: "Antioxidant serum to fade dark spots and boost skin radiance.",
+    price: "$16.99",
+    pixelArt: EMPTY_GRID,
+  },
+  {
+    id: "facial-mist",
+    spriteId: "facial-mist",
+    name: "Hydrating Facial Mist",
+    brand: "",
+    category: "Toner",
+    description: "Refreshing rose-water spray to soothe and balance skin pH anytime.",
+    price: "$11.99",
+    pixelArt: EMPTY_GRID,
+  },
+  {
+    id: "eye-patches",
+    spriteId: "eye-patches",
+    name: "Under-Eye Gel Patches",
+    brand: "",
+    category: "Eye Cream",
+    description: "Cooling collagen gel crescents to de-puff and brighten tired eyes.",
+    price: "$9.99",
+    pixelArt: EMPTY_GRID,
+  },
+  {
+    id: "foam-cleanser",
+    spriteId: "foam-cleanser",
+    name: "Gentle Foam Cleanser",
+    brand: "",
+    category: "Cleanser",
+    description: "Soft foamy wash that removes impurities without stripping the skin.",
+    price: "$9.99",
+    pixelArt: EMPTY_GRID,
+  },
+  {
+    id: "mineral-sunscreen",
+    spriteId: "mineral-sunscreen",
+    name: "Mineral Sunscreen SPF 30",
+    brand: "",
+    category: "SPF",
+    description: "Reef-safe zinc oxide formula that protects without a white cast.",
+    price: "$21.99",
+    pixelArt: EMPTY_GRID,
   },
 ];

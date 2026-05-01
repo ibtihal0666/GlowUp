@@ -365,6 +365,318 @@ export function PuredermMaskSprite({ size = 96 }: SpriteProps) {
 
 const WH = "#FFFFFF";
 
+/* ── 8. Hydrating Face Lotion ────────────────────────────────
+   Soft rose-pink pump bottle with white label                */
+export function HydratingLotionSprite({ size = 96 }: SpriteProps) {
+  const PK = "#FFB6C1", PH = "#FFD0DA", PD = "#E8788A", PC = "#C85070";
+  const PG = "#C8A0B0";
+  const W  = "#FFFFFF", WS = "#F5E8EC";
+  return (
+    <svg width={size} height={size} viewBox="0 0 28 36" shapeRendering="crispEdges">
+      <rect x={11} y={0} width={5} height={2} fill={PG}/>
+      <rect x={13} y={2} width={2} height={4} fill={PG}/>
+      <rect x={9}  y={5} width={10} height={1} fill={PC}/>
+      <rect x={8}  y={6} width={12} height={3} fill={PC}/>
+      <rect x={8}  y={6} width={3}  height={3} fill={PD}/>
+      <rect x={18} y={6} width={2}  height={3} fill="#A03050"/>
+      <rect x={9}  y={8} width={10} height={1} fill="#A03050"/>
+      <rect x={7}  y={9}  width={14} height={1} fill={PH}/>
+      <rect x={6}  y={10} width={16} height={22} fill={PK}/>
+      <rect x={6}  y={10} width={2}  height={22} fill={PH}/>
+      <rect x={6}  y={10} width={1}  height={22} fill="#FFE0EA"/>
+      <rect x={20} y={11} width={2}  height={20} fill={PD}/>
+      <rect x={7}  y={14} width={13} height={13} fill={W}/>
+      <rect x={7}  y={14} width={13} height={1}  fill={WS}/>
+      <rect x={7}  y={26} width={13} height={1}  fill={WS}/>
+      <rect x={13} y={17} width={2}  height={1}  fill={PC}/>
+      <rect x={12} y={18} width={4}  height={2}  fill={PC}/>
+      <rect x={13} y={20} width={2}  height={1}  fill={PC}/>
+      <rect x={13} y={18} width={2}  height={2}  fill={PH}/>
+      <rect x={13} y={22} width={2}  height={2}  fill="#81C784"/>
+      <rect x={6}  y={32} width={16} height={2}  fill={PD}/>
+      <rect x={7}  y={33} width={14} height={1}  fill={PC}/>
+      <Sparkle x={4}  y={12} c="#FFD0DA"/>
+      <Sparkle x={23} y={18} c="#FFD0DA"/>
+      <Sparkle x={4}  y={27} c="#FFFFFF"/>
+    </svg>
+  );
+}
+
+/* ── 9. Protective Skin Balm ─────────────────────────────────
+   Small flat round silver tin                                */
+export function SkinBalmSprite({ size = 96 }: SpriteProps) {
+  const SV = "#D8D8D8", SH = "#F0F0F0", SD = "#B0B0B0", SK = "#909090";
+  const W  = "#FFFFFF";
+  return (
+    <svg width={size} height={size} viewBox="0 0 28 36" shapeRendering="crispEdges">
+      <rect x={4}  y={9}  width={20} height={1} fill={SH}/>
+      <rect x={3}  y={10} width={22} height={5} fill={SH}/>
+      <rect x={3}  y={10} width={4}  height={5} fill={W}/>
+      <rect x={21} y={10} width={4}  height={5} fill={SD}/>
+      <rect x={4}  y={14} width={20} height={1} fill={SD}/>
+      <rect x={3}  y={15} width={22} height={2} fill={SK}/>
+      <rect x={3}  y={17} width={22} height={10} fill={SV}/>
+      <rect x={3}  y={17} width={3}  height={10} fill={SH}/>
+      <rect x={22} y={17} width={3}  height={10} fill={SD}/>
+      <rect x={4}  y={19} width={20} height={6}  fill={W}/>
+      <rect x={13} y={20} width={2}  height={1}  fill={SK}/>
+      <rect x={12} y={21} width={4}  height={2}  fill={SK}/>
+      <rect x={13} y={23} width={2}  height={1}  fill={SK}/>
+      <rect x={3}  y={27} width={22} height={2} fill={SK}/>
+      <rect x={4}  y={28} width={20} height={1} fill="#707070"/>
+      <rect x={5}  y={29} width={18} height={1} fill={SD}/>
+      <Sparkle x={1}  y={12} c="#EEEEEE"/>
+      <Sparkle x={26} y={19} c="#EEEEEE"/>
+      <Sparkle x={1}  y={25} c="#FFFFFF"/>
+    </svg>
+  );
+}
+
+/* ── 10. Acne Spot Patches ───────────────────────────────────
+   Clear flat packet showing a grid of hydrocolloid dots      */
+export function AcnePatchesSprite({ size = 96 }: SpriteProps) {
+  const WP = "#F8F8F8", WS = "#EEEEEE", WD = "#D8D8D8";
+  const PT = "#B8D4F8", PH = "#D4E8FC";
+  return (
+    <svg width={size} height={size} viewBox="0 0 28 36" shapeRendering="crispEdges">
+      <rect x={3}  y={5}  width={22} height={1} fill={WD}/>
+      <rect x={2}  y={6}  width={24} height={24} fill={WP}/>
+      <rect x={3}  y={30} width={22} height={1} fill={WD}/>
+      <rect x={3}  y={6}  width={3}  height={24} fill="#FFFFFF"/>
+      <rect x={22} y={7}  width={3}  height={22} fill={WD}/>
+      <rect x={3}  y={6}  width={22} height={3}  fill="#F8E8F0"/>
+      <rect x={5}  y={11} width={4}  height={4}  fill={PT}/>
+      <rect x={5}  y={11} width={1}  height={4}  fill={PH}/>
+      <rect x={5}  y={11} width={4}  height={1}  fill={PH}/>
+      <rect x={11} y={11} width={4}  height={4}  fill={PT}/>
+      <rect x={11} y={11} width={1}  height={4}  fill={PH}/>
+      <rect x={11} y={11} width={4}  height={1}  fill={PH}/>
+      <rect x={17} y={11} width={4}  height={4}  fill={PT}/>
+      <rect x={17} y={11} width={1}  height={4}  fill={PH}/>
+      <rect x={17} y={11} width={4}  height={1}  fill={PH}/>
+      <rect x={5}  y={17} width={4}  height={4}  fill={PT}/>
+      <rect x={5}  y={17} width={1}  height={4}  fill={PH}/>
+      <rect x={5}  y={17} width={4}  height={1}  fill={PH}/>
+      <rect x={11} y={17} width={4}  height={4}  fill={PT}/>
+      <rect x={11} y={17} width={1}  height={4}  fill={PH}/>
+      <rect x={11} y={17} width={4}  height={1}  fill={PH}/>
+      <rect x={17} y={17} width={4}  height={4}  fill={PT}/>
+      <rect x={17} y={17} width={1}  height={4}  fill={PH}/>
+      <rect x={17} y={17} width={4}  height={1}  fill={PH}/>
+      <rect x={5}  y={23} width={4}  height={4}  fill={PT}/>
+      <rect x={5}  y={23} width={1}  height={4}  fill={PH}/>
+      <rect x={5}  y={23} width={4}  height={1}  fill={PH}/>
+      <rect x={11} y={23} width={4}  height={4}  fill={PT}/>
+      <rect x={11} y={23} width={1}  height={4}  fill={PH}/>
+      <rect x={11} y={23} width={4}  height={1}  fill={PH}/>
+      <rect x={2}  y={30} width={24} height={2}  fill={WD}/>
+      <Sparkle x={1}  y={9}  c="#E8F4FC"/>
+      <Sparkle x={26} y={15} c="#E8F4FC"/>
+      <Sparkle x={1}  y={26} c="#FFFFFF"/>
+    </svg>
+  );
+}
+
+/* ── 11. Vitamin C Brightening Serum ────────────────────────
+   Amber/orange square dropper bottle with white label        */
+export function VitaminCSerumSprite({ size = 96 }: SpriteProps) {
+  const OR = "#FF8F00", OH = "#FFB300", OD = "#E65100", OL = "#FFE082";
+  const WW = "#FFFFFF", WS = "#F5F5F5";
+  const LB = "#FFF8E1";
+  return (
+    <svg width={size} height={size} viewBox="0 0 28 36" shapeRendering="crispEdges">
+      <rect x={12} y={0} width={4}  height={1} fill={WW}/>
+      <rect x={11} y={1} width={6}  height={2} fill={WW}/>
+      <rect x={11} y={1} width={1}  height={2} fill={WS}/>
+      <rect x={16} y={1} width={1}  height={2} fill={WS}/>
+      <rect x={11} y={3} width={6}  height={4} fill={WW}/>
+      <rect x={11} y={3} width={1}  height={4} fill={WS}/>
+      <rect x={12} y={7} width={4}  height={2} fill={WS}/>
+      <rect x={13} y={7} width={2}  height={2} fill={WW}/>
+      <rect x={8}  y={9} width={12} height={1} fill={OH}/>
+      <rect x={7}  y={10} width={14} height={1} fill={OR}/>
+      <rect x={6}  y={11} width={16} height={20} fill={OR}/>
+      <rect x={7}  y={31} width={14} height={1} fill={OD}/>
+      <rect x={6}  y={11} width={2}  height={20} fill={OH}/>
+      <rect x={6}  y={11} width={1}  height={20} fill={OL}/>
+      <rect x={20} y={12} width={2}  height={18} fill={OD}/>
+      <rect x={7}  y={15} width={14} height={12} fill={LB}/>
+      <rect x={7}  y={15} width={14} height={1}  fill={WS}/>
+      <rect x={7}  y={26} width={14} height={1}  fill={WS}/>
+      <rect x={11} y={17} width={6}  height={1}  fill={OR}/>
+      <rect x={11} y={18} width={2}  height={1}  fill={OR}/>
+      <rect x={11} y={19} width={6}  height={1}  fill={OR}/>
+      <rect x={11} y={20} width={2}  height={1}  fill={OR}/>
+      <rect x={11} y={21} width={6}  height={1}  fill={OR}/>
+      <rect x={18} y={18} width={1}  height={1}  fill={OL}/>
+      <rect x={9}  y={23} width={1}  height={1}  fill={OL}/>
+      <rect x={6}  y={32} width={16} height={2}  fill={OH}/>
+      <rect x={7}  y={33} width={14} height={1}  fill={OD}/>
+      <Sparkle x={4}  y={14} c="#FFE082"/>
+      <Sparkle x={24} y={20} c="#FFE082"/>
+      <Sparkle x={4}  y={28} c="#FFFFFF"/>
+    </svg>
+  );
+}
+
+/* ── 12. Hydrating Facial Mist ───────────────────────────────
+   Slim pink spray bottle with press-down nozzle              */
+export function FacialMistSprite({ size = 96 }: SpriteProps) {
+  const PK = "#F48FB1", PH = "#F8BBD9", PD = "#C2185B", PM = "#E91E63";
+  const W  = "#FFFFFF", WS = "#FCE4EC";
+  const GP = "#D0D0D0";
+  return (
+    <svg width={size} height={size} viewBox="0 0 28 36" shapeRendering="crispEdges">
+      <rect x={9}  y={0} width={8}  height={1} fill={GP}/>
+      <rect x={8}  y={1} width={10} height={3} fill={GP}/>
+      <rect x={8}  y={1} width={2}  height={3} fill={W}/>
+      <rect x={16} y={1} width={2}  height={3} fill="#B0B0B0"/>
+      <rect x={18} y={2} width={4}  height={1} fill={GP}/>
+      <rect x={20} y={1} width={2}  height={1} fill={GP}/>
+      <rect x={10} y={4} width={8}  height={2} fill={WS}/>
+      <rect x={11} y={4} width={6}  height={2} fill={W}/>
+      <rect x={9}  y={6}  width={10} height={26} fill={PK}/>
+      <rect x={9}  y={6}  width={2}  height={26} fill={PH}/>
+      <rect x={9}  y={6}  width={1}  height={26} fill="#FDD0E0"/>
+      <rect x={17} y={7}  width={2}  height={24} fill={PD}/>
+      <rect x={10} y={12} width={8}  height={12} fill={W}/>
+      <rect x={10} y={12} width={8}  height={1}  fill={WS}/>
+      <rect x={10} y={23} width={8}  height={1}  fill={WS}/>
+      <rect x={13} y={14} width={2}  height={2}  fill={PM}/>
+      <rect x={12} y={16} width={4}  height={1}  fill={PM}/>
+      <rect x={11} y={18} width={1}  height={1}  fill={PM}/>
+      <rect x={14} y={18} width={2}  height={1}  fill={PM}/>
+      <rect x={9}  y={32} width={10} height={2}  fill={PD}/>
+      <rect x={10} y={33} width={8}  height={1}  fill="#9C0040"/>
+      <Sparkle x={6}  y={9}  c="#F8BBD9"/>
+      <Sparkle x={21} y={17} c="#F8BBD9"/>
+      <Sparkle x={6}  y={26} c="#FFFFFF"/>
+    </svg>
+  );
+}
+
+/* ── 13. Under-Eye Gel Patches ───────────────────────────────
+   Flat lavender packet with crescent eye patch windows       */
+export function EyePatchesSprite({ size = 96 }: SpriteProps) {
+  const PV = "#CE93D8", PH = "#E1BEE7", PD = "#8E24AA";
+  const LB = "#B3E5FC", LH = "#E1F5FE";
+  const WW = "#FFFFFF";
+  return (
+    <svg width={size} height={size} viewBox="0 0 28 36" shapeRendering="crispEdges">
+      <rect x={2}  y={5}  width={24} height={1} fill={PV}/>
+      <rect x={1}  y={6}  width={26} height={24} fill={PV}/>
+      <rect x={2}  y={30} width={24} height={1} fill={PD}/>
+      <rect x={2}  y={6}  width={3}  height={24} fill={PH}/>
+      <rect x={23} y={7}  width={3}  height={22} fill={PD}/>
+      <rect x={2}  y={6}  width={24} height={2}  fill={PH}/>
+      <rect x={3}  y={8}  width={22} height={5}  fill="#F3E5F5"/>
+      <rect x={3}  y={15} width={10} height={6}  fill={LB}/>
+      <rect x={3}  y={15} width={2}  height={6}  fill={LH}/>
+      <rect x={3}  y={15} width={10} height={1}  fill={LH}/>
+      <rect x={4}  y={20} width={8}  height={1}  fill={PV}/>
+      <rect x={5}  y={21} width={6}  height={1}  fill={PV}/>
+      <rect x={15} y={15} width={10} height={6}  fill={LB}/>
+      <rect x={15} y={15} width={2}  height={6}  fill={LH}/>
+      <rect x={15} y={15} width={10} height={1}  fill={LH}/>
+      <rect x={16} y={20} width={8}  height={1}  fill={PV}/>
+      <rect x={17} y={21} width={6}  height={1}  fill={PV}/>
+      <rect x={8}  y={17} width={1}  height={1}  fill={WW}/>
+      <rect x={20} y={17} width={1}  height={1}  fill={WW}/>
+      <rect x={2}  y={24} width={24} height={4}  fill={PV}/>
+      <rect x={2}  y={30} width={24} height={2}  fill={PD}/>
+      <rect x={3}  y={31} width={22} height={1}  fill="#6A0090"/>
+      <Sparkle x={0}  y={10} c="#E1BEE7"/>
+      <Sparkle x={27} y={18} c="#E1BEE7"/>
+      <Sparkle x={0}  y={26} c="#FFFFFF"/>
+    </svg>
+  );
+}
+
+/* ── 14. Gentle Foam Cleanser ────────────────────────────────
+   Wide pale-blue foaming pump bottle with bubble label art   */
+export function FoamCleanserSprite({ size = 96 }: SpriteProps) {
+  const BU = "#BBDEFB", BH = "#E3F2FD", BD = "#90CAF9", BC = "#1565C0";
+  const W  = "#FFFFFF", WS = "#E8F4FB";
+  const PG = "#90A0B0";
+  return (
+    <svg width={size} height={size} viewBox="0 0 28 36" shapeRendering="crispEdges">
+      <rect x={12} y={0} width={2}  height={1}  fill={BH}/>
+      <rect x={10} y={1} width={2}  height={1}  fill={BH}/>
+      <rect x={15} y={1} width={2}  height={1}  fill={BH}/>
+      <rect x={11} y={2} width={1}  height={1}  fill={BU}/>
+      <rect x={14} y={2} width={2}  height={1}  fill={BU}/>
+      <rect x={10} y={3} width={7}  height={2}  fill={PG}/>
+      <rect x={13} y={5} width={2}  height={3}  fill={PG}/>
+      <rect x={9}  y={7} width={10} height={1}  fill={BD}/>
+      <rect x={8}  y={8} width={12} height={3}  fill={BD}/>
+      <rect x={8}  y={8} width={3}  height={3}  fill={BH}/>
+      <rect x={18} y={8} width={2}  height={3}  fill={BC}/>
+      <rect x={9}  y={10} width={10} height={1} fill={BC}/>
+      <rect x={7}  y={11} width={14} height={1} fill={BH}/>
+      <rect x={5}  y={12} width={18} height={20} fill={BU}/>
+      <rect x={5}  y={12} width={3}  height={20} fill={BH}/>
+      <rect x={5}  y={12} width={1}  height={20} fill={W}/>
+      <rect x={21} y={13} width={2}  height={18} fill={BD}/>
+      <rect x={6}  y={16} width={14} height={12} fill={W}/>
+      <rect x={6}  y={16} width={14} height={1}  fill={WS}/>
+      <rect x={6}  y={27} width={14} height={1}  fill={WS}/>
+      <rect x={10} y={19} width={3}  height={3}  fill={BU}/>
+      <rect x={10} y={19} width={1}  height={3}  fill={BH}/>
+      <rect x={15} y={20} width={2}  height={2}  fill={BU}/>
+      <rect x={9}  y={22} width={2}  height={2}  fill={BD}/>
+      <rect x={5}  y={32} width={18} height={2}  fill={BD}/>
+      <rect x={6}  y={33} width={16} height={1}  fill={BC}/>
+      <Sparkle x={3}  y={13} c="#E3F2FD"/>
+      <Sparkle x={24} y={19} c="#E3F2FD"/>
+      <Sparkle x={3}  y={28} c="#FFFFFF"/>
+    </svg>
+  );
+}
+
+/* ── 15. Mineral Sunscreen SPF 30 ────────────────────────────
+   White squeezable tube with soft lavender accent band       */
+export function MineralSunscreenSprite({ size = 96 }: SpriteProps) {
+  const WW = "#F8F8F8", WH = "#FFFFFF", WS = "#DCDCDC", WD = "#C0C0C0";
+  const LV = "#CE93D8", LH = "#E1BEE7", LD = "#8E24AA";
+  const GC = "#BDBDBD", GCH = "#E0E0E0";
+  return (
+    <svg width={size} height={size} viewBox="0 0 28 36" shapeRendering="crispEdges">
+      <rect x={10} y={0} width={8}  height={1} fill={GC}/>
+      <rect x={9}  y={1} width={10} height={3} fill={GC}/>
+      <rect x={9}  y={1} width={2}  height={3} fill={GCH}/>
+      <rect x={17} y={1} width={2}  height={3} fill="#A0A0A0"/>
+      <rect x={10} y={3} width={8}  height={1} fill="#A0A0A0"/>
+      <rect x={9}  y={4} width={10} height={1} fill={WS}/>
+      <rect x={8}  y={5}  width={12} height={24} fill={WW}/>
+      <rect x={8}  y={5}  width={2}  height={24} fill={WH}/>
+      <rect x={18} y={6}  width={2}  height={22} fill={WS}/>
+      <rect x={19} y={7}  width={1}  height={20} fill={WD}/>
+      <rect x={9}  y={9}  width={10} height={1} fill={LH}/>
+      <rect x={9}  y={10} width={10} height={3} fill={LV}/>
+      <rect x={10} y={10} width={2}  height={3} fill={LH}/>
+      <rect x={9}  y={13} width={10} height={1} fill={LD}/>
+      <rect x={9}  y={14} width={10} height={8}  fill={WH}/>
+      <rect x={13} y={15} width={2}  height={1}  fill="#FFD600"/>
+      <rect x={12} y={16} width={4}  height={3}  fill="#FFF176"/>
+      <rect x={11} y={17} width={1}  height={1}  fill="#FFD600"/>
+      <rect x={16} y={17} width={1}  height={1}  fill="#FFD600"/>
+      <rect x={13} y={19} width={2}  height={1}  fill="#FFD600"/>
+      <rect x={8}  y={22} width={12} height={5}  fill={WW}/>
+      <rect x={8}  y={22} width={2}  height={5}  fill={WH}/>
+      <rect x={18} y={22} width={2}  height={5}  fill={WS}/>
+      <rect x={8}  y={27} width={12} height={3}  fill={LV}/>
+      <rect x={8}  y={27} width={2}  height={3}  fill={LH}/>
+      <rect x={18} y={27} width={2}  height={3}  fill={LD}/>
+      <rect x={9}  y={29} width={10} height={2}  fill={LD}/>
+      <rect x={10} y={30} width={8}  height={2}  fill={LD}/>
+      <rect x={11} y={31} width={6}  height={1}  fill="#600090"/>
+      <Sparkle x={6}  y={8}  c="#E1BEE7"/>
+      <Sparkle x={22} y={15} c="#FFF9C4"/>
+      <Sparkle x={6}  y={23} c="#FFFFFF"/>
+    </svg>
+  );
+}
+
 /* ── Sprite registry ─────────────────────────────────────────*/
 export type SpriteId =
   | "cetaphil-cleanser"
@@ -373,7 +685,15 @@ export type SpriteId =
   | "cerave-moisturizer"
   | "cetaphil-spf"
   | "axisy-eye-serum"
-  | "purederm-mask";
+  | "purederm-mask"
+  | "hydrating-lotion"
+  | "skin-balm"
+  | "acne-patches"
+  | "vitamin-c-serum"
+  | "facial-mist"
+  | "eye-patches"
+  | "foam-cleanser"
+  | "mineral-sunscreen";
 
 const SPRITE_COMPONENTS: Record<SpriteId, React.ComponentType<SpriteProps>> = {
   "cetaphil-cleanser":    CetaphilCleanserSprite,
@@ -383,6 +703,14 @@ const SPRITE_COMPONENTS: Record<SpriteId, React.ComponentType<SpriteProps>> = {
   "cetaphil-spf":         CetaphilSPFSprite,
   "axisy-eye-serum":      AxisYEyeSerumSprite,
   "purederm-mask":        PuredermMaskSprite,
+  "hydrating-lotion":     HydratingLotionSprite,
+  "skin-balm":            SkinBalmSprite,
+  "acne-patches":         AcnePatchesSprite,
+  "vitamin-c-serum":      VitaminCSerumSprite,
+  "facial-mist":          FacialMistSprite,
+  "eye-patches":          EyePatchesSprite,
+  "foam-cleanser":        FoamCleanserSprite,
+  "mineral-sunscreen":    MineralSunscreenSprite,
 };
 
 interface ProductSpriteProps {
