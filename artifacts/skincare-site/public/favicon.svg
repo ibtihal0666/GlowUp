@@ -1,31 +1,32 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" shapeRendering="crispEdges">
-  <!-- Top petal -->
-  <rect x="6" y="0" width="4" height="1" fill="#FF90B3"/>
-  <rect x="5" y="1" width="6" height="3" fill="#FF90B3"/>
-  <rect x="6" y="4" width="4" height="1" fill="#FF90B3"/>
-  <!-- Right petal -->
-  <rect x="11" y="4" width="1" height="1" fill="#FF90B3"/>
-  <rect x="11" y="5" width="4" height="3" fill="#FF90B3"/>
-  <rect x="11" y="8" width="1" height="1" fill="#FF90B3"/>
-  <!-- Bottom-right petal -->
-  <rect x="10" y="9" width="1" height="1" fill="#FF90B3"/>
-  <rect x="9" y="10" width="4" height="1" fill="#FF90B3"/>
-  <rect x="9" y="11" width="3" height="2" fill="#FF90B3"/>
-  <!-- Bottom-left petal -->
-  <rect x="5" y="9" width="1" height="1" fill="#FF90B3"/>
-  <rect x="3" y="10" width="4" height="1" fill="#FF90B3"/>
-  <rect x="4" y="11" width="3" height="2" fill="#FF90B3"/>
-  <!-- Left petal -->
-  <rect x="4" y="4" width="1" height="1" fill="#FF90B3"/>
-  <rect x="1" y="5" width="4" height="3" fill="#FF90B3"/>
-  <rect x="4" y="8" width="1" height="1" fill="#FF90B3"/>
-  <!-- Flower center -->
-  <rect x="5" y="4" width="6" height="5" fill="#FFD54F"/>
-  <rect x="6" y="5" width="4" height="3" fill="#FFF176"/>
-  <rect x="7" y="5" width="2" height="1" fill="#FFFFFF"/>
+  <!-- Tulip flower top (three petal tips) -->
+  <rect x="4" y="0" width="2" height="1" fill="#FF69B4"/>
+  <rect x="10" y="0" width="2" height="1" fill="#FF69B4"/>
+  <rect x="6" y="0" width="4" height="2" fill="#FF4499"/>
+  <!-- Tulip body - widens then narrows (cup shape) -->
+  <rect x="2" y="1" width="4" height="1" fill="#FF69B4"/>
+  <rect x="10" y="1" width="4" height="1" fill="#FF69B4"/>
+  <rect x="1" y="2" width="4" height="4" fill="#FF69B4"/>
+  <rect x="11" y="2" width="4" height="4" fill="#FF69B4"/>
+  <rect x="5" y="2" width="6" height="4" fill="#FF4499"/>
+  <!-- Highlight on left petal -->
+  <rect x="2" y="2" width="2" height="3" fill="#FFB6C1"/>
+  <rect x="2" y="1" width="2" height="1" fill="#FFB6C1"/>
+  <!-- Tulip base narrowing -->
+  <rect x="3" y="6" width="2" height="1" fill="#FF69B4"/>
+  <rect x="11" y="6" width="2" height="1" fill="#FF69B4"/>
+  <rect x="5" y="6" width="6" height="1" fill="#E8387A"/>
+  <rect x="4" y="7" width="8" height="1" fill="#4CAF50"/>
   <!-- Stem -->
-  <rect x="7" y="13" width="2" height="3" fill="#4CAF50"/>
-  <!-- Leaves -->
-  <rect x="5" y="14" width="2" height="1" fill="#66BB6A"/>
-  <rect x="9" y="14" width="2" height="1" fill="#66BB6A"/>
+  <rect x="7" y="8" width="2" height="4" fill="#4CAF50"/>
+  <!-- Left leaf -->
+  <rect x="3" y="9"  width="4" height="1" fill="#66BB6A"/>
+  <rect x="4" y="10" width="3" height="1" fill="#66BB6A"/>
+  <rect x="5" y="11" width="2" height="1" fill="#66BB6A"/>
+  <!-- Right leaf -->
+  <rect x="9"  y="11" width="4" height="1" fill="#66BB6A"/>
+  <rect x="9"  y="12" width="3" height="1" fill="#66BB6A"/>
+  <rect x="10" y="13" width="2" height="1" fill="#66BB6A"/>
+  <!-- Stem continued -->
+  <rect x="7" y="12" width="2" height="4" fill="#4CAF50"/>
 </svg>

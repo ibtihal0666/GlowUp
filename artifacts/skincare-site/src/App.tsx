@@ -34,7 +34,7 @@ function App() {
           <main className="flex-1 pb-12 pt-8 pr-[200px] relative z-10">
             <Router />
           </main>
-          <footer className="pr-[200px] relative z-10 border-t-4 border-primary bg-card/80 backdrop-blur-sm py-4 px-6 flex flex-col sm:flex-row items-center justify-center gap-2 sm:gap-6">
+          <footer className="pr-[200px] relative z-10 border-t-4 border-primary bg-card/80 backdrop-blur-sm py-4 px-6 flex flex-col sm:flex-row items-center justify-center gap-2 sm:gap-6 flex-wrap">
             <span className="font-sans text-xs text-muted-foreground text-center">
               © IBTIHAL NOUI — All rights reserved
             </span>
@@ -44,6 +44,15 @@ function App() {
               className="font-sans text-xs text-primary hover:underline"
             >
               ibtihalnoui06@gmail.com
+            </a>
+            <span className="hidden sm:block text-primary font-bold">·</span>
+            <a
+              href="https://github.com/ibtihal0666"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="font-sans text-xs text-primary hover:underline"
+            >
+              github.com/ibtihal0666
             </a>
           </footer>
           <Navbar />
