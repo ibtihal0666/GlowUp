@@ -66,9 +66,6 @@ export default function CreateProduct() {
                 <p className="font-display text-[0.36rem] text-center leading-loose text-foreground line-clamp-2 w-full">
                   {t.name}
                 </p>
-                <p className="font-sans text-[0.65rem] font-bold text-primary">
-                  {t.price}
-                </p>
               </button>
             );
           })}
@@ -88,11 +85,6 @@ export default function CreateProduct() {
               <p className="font-display text-[0.5rem] text-muted-foreground leading-loose">
                 {selected.category}
               </p>
-              {selected.price && (
-                <p className="font-sans font-bold text-primary text-lg">
-                  {selected.price}
-                </p>
-              )}
               {selected.description && (
                 <p className="font-sans text-sm text-muted-foreground leading-relaxed px-2">
                   {selected.description}

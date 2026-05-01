@@ -42,9 +42,6 @@ export default function Products() {
               {p.brand && (
                 <p className="font-sans text-sm text-center text-muted-foreground mb-1">{p.brand}</p>
               )}
-              {p.price && (
-                <p className="font-sans text-center font-bold text-primary text-base mb-1">{p.price}</p>
-              )}
               {p.description && (
                 <p className="font-sans text-center text-muted-foreground text-xs leading-snug mb-2 line-clamp-2 px-1">
                   {p.description}

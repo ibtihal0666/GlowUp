@@ -28,12 +28,24 @@ function Router() {
 function App() {
   return (
     <ThemeProvider>
-      <div className="min-h-screen flex relative">
+      <div className="min-h-screen flex flex-col relative">
         <PixelBackground />
         <WouterRouter base={import.meta.env.BASE_URL.replace(/\/$/, "")}>
           <main className="flex-1 pb-12 pt-8 pr-[200px] relative z-10">
             <Router />
           </main>
+          <footer className="pr-[200px] relative z-10 border-t-4 border-primary bg-card/80 backdrop-blur-sm py-4 px-6 flex flex-col sm:flex-row items-center justify-center gap-2 sm:gap-6">
+            <span className="font-sans text-xs text-muted-foreground text-center">
+              © IBTIHAL NOUI — All rights reserved
+            </span>
+            <span className="hidden sm:block text-primary font-bold">·</span>
+            <a
+              href="mailto:ibtihalnoui06@gmail.com"
+              className="font-sans text-xs text-primary hover:underline"
+            >
+              ibtihalnoui06@gmail.com
+            </a>
+          </footer>
           <Navbar />
         </WouterRouter>
       </div>
